@@ -16,9 +16,9 @@ let tens: HashMap<u64, &str> = [
 ].iter().cloned().collect();
 
 let bases: HashMap<u64, &str> = [
-    (3, "hundred"), (4, "thousand"), 
-    (7, "million"), (10, "billion"), 
-    (13, "trillion")
+    (2, "hundred"), (3, "thousand"), 
+    (6, "million"), (9, "billion"), 
+    (12, "trillion")
 ].iter().cloned().collect();
 
 
