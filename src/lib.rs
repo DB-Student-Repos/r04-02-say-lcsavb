@@ -15,11 +15,23 @@ let tens: HashMap<u64, &str> = [
     (6, "sixty"), (7, "seventy"), (8, "eighty"), (9, "ninety")
 ].iter().cloned().collect();
 
-let bases: HashMap<u64, &str> = [
+let powers: HashMap<u64, &str> = [
     (2, "hundred"), (3, "thousand"), 
     (6, "million"), (9, "billion"), 
     (12, "trillion")
 ].iter().cloned().collect();
+
+pub fn determine_power(n: u64) -> u64 {
+    match n.len() => {
+        1 => 0,
+        2 => 0,
+        3 => 2,
+        4..=6 => 3,
+        7..=9 => 6,
+        10..=12 => 9,
+        _ => panic!("Number too large")
+    
+}
 
 
 
